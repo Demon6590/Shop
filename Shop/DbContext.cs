@@ -16,7 +16,7 @@ public class DbContext
         using var db = new SqliteConnection(_connectionString);
         db.Open();
 
-        const string sql = "SELECT * FROM view_stock";
+        const string sql = "SELECT * FROM view_product_stock";
 
         return db.Query<StockItem>(sql);
     }
@@ -26,7 +26,7 @@ public class DbContext
         using var db = new SqliteConnection(_connectionString);
         db.Open();
 
-        const string sql = "SELECT * FROM view_single_sales";
+        const string sql = "SELECT * FROM view_product_sales";
 
         return db.Query<Sale>(sql);
         
