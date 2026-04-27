@@ -1,8 +1,8 @@
 ﻿CREATE VIEW view_product_stock AS
 SELECT
-    p.id AS product_id,
-    p.name AS product_name,
-    p.stock AS remaining_stock
+    p.id AS id,
+    p.name AS name,
+    p.stock AS stock
 FROM table_product p;
 
 CREATE VIEW view_product_sales AS

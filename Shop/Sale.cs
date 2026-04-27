@@ -1,4 +1,6 @@
-﻿namespace Shop;
+﻿using System;
+
+namespace Shop;
 
 public record Sale()
 {

@@ -1,9 +1,10 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using Dapper;
 using Shop;
 Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
 SqlMapper.AddTypeHandler(new DateOnlyHandler());
-var dbContext = new DbContext(@"Data Source=C:\Users\Demon659\RiderProjects\Shop\Shop.db;");
+var dbContext = new DbContext(@"Data Source=C:\Users\college\RiderProjects\Shop\Shop.db;");
 
 
 var sales = dbContext.GetSale();
